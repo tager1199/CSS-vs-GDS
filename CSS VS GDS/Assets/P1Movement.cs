@@ -8,7 +8,7 @@ public class P1Movement : MonoBehaviour
 {
     
     public int lives = 3;
-    public float heal = 100;
+    public float heal = 50;
     public int choice;
     public bool first = false;
     public bool second = false;
@@ -57,7 +57,7 @@ public class P1Movement : MonoBehaviour
         if (heal <= 0)
         {
             lives -= 1;
-            heal = 100;
+            heal = 50;
         }
         if (lives == 2 && first == false)
         {
@@ -78,8 +78,9 @@ public class P1Movement : MonoBehaviour
         }
         if (lives == 1 && second == false)
         {
-            second = false;
+            second = true;
             health2.SetActive(false);
+            heal = 100;
             if (choice == 0)
             {
                 m_Renderer.material.mainTexture = CSS3;

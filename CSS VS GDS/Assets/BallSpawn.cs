@@ -12,6 +12,7 @@ public class BallSpawn : MonoBehaviour
     public GameObject ball;
     public Collider Col;
     Renderer m_Renderer;
+    public int rnd;
 
     void Start()
     {
@@ -36,7 +37,7 @@ public class BallSpawn : MonoBehaviour
         RotateVec.Set(0, 0, 0, 0);
         vector.Set(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         InvokeRepeating("Spawn", spawnTime, spawnTime);
-        int rnd = Random.Range(0, 3);
+        rnd = Random.Range(1, 4);
         if (win == "P2")
         {
             loss = PlayerPrefs.GetInt("Player 1 Choice");
@@ -47,11 +48,11 @@ public class BallSpawn : MonoBehaviour
         }
         if (loss == 0)
         {
-            if (rnd == 0)
+            if (rnd == 1)
             {
                 m_Renderer.material.mainTexture = CSS1;
             }
-            if (rnd == 1)
+            else if (rnd == 2)
             {
                 m_Renderer.material.mainTexture = CSS2;
             }
@@ -62,11 +63,11 @@ public class BallSpawn : MonoBehaviour
         }
         else if (loss == 1)
         {
-            if (rnd == 0)
+            if (rnd == 1)
             {
                 m_Renderer.material.mainTexture = GDS1;
             }
-            if (rnd == 1)
+            else if (rnd == 2)
             {
                 m_Renderer.material.mainTexture = GDS2;
             }
@@ -77,11 +78,11 @@ public class BallSpawn : MonoBehaviour
         }
         else
         {
-            if (rnd == 0)
+            if (rnd == 1)
             {
                 m_Renderer.material.mainTexture = Other1;
             }
-            if (rnd == 1)
+            else if (rnd == 2)
             {
                 m_Renderer.material.mainTexture = Other2;
             }
@@ -95,6 +96,7 @@ public class BallSpawn : MonoBehaviour
     private void Update()
     {
          spawnTime = Random.Range(1f, 3f);
+        rnd = Random.Range(1, 3);
     }
     
     void Spawn()

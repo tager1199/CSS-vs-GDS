@@ -799,6 +799,7 @@ GameObject:
   - component: {fileID: 373449225}
   - component: {fileID: 373449222}
   - component: {fileID: 373449226}
+  - component: {fileID: 373449227}
   m_Layer: 0
   m_Name: Sword 1
   m_TagString: Untagged
@@ -907,6 +908,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!122 &373449227
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373449220}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_Size: 5
 --- !u!1 &417300736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1707,7 @@ GameObject:
   - component: {fileID: 714420726}
   - component: {fileID: 714420722}
   - component: {fileID: 714420725}
+  - component: {fileID: 714420727}
   m_Layer: 0
   m_Name: Sword 2
   m_TagString: Untagged
@@ -1802,6 +1816,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a22f5438697214ea540494997da697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!122 &714420727
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714420720}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278321407
+  m_Size: 5
 --- !u!1 &767784044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2674,6 +2700,8 @@ MonoBehaviour:
   lives: 3
   health: 100
   choice: 0
+  first: 0
+  second: 0
 --- !u!1 &1219014711
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,8 +3228,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  health: 100
+  heal: 100
   choice: 0
+  first: 0
+  second: 0
 --- !u!54 &1351850488
 Rigidbody:
   m_ObjectHideFlags: 0

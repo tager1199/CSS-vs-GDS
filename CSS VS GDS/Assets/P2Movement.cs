@@ -8,7 +8,7 @@ public class P2Movement : MonoBehaviour
 
 
     public int lives = 3;
-    public float health = 100;
+    public float health = 50;
     public int choice;
     public bool first = false;
     public bool second = false;
@@ -54,7 +54,7 @@ public class P2Movement : MonoBehaviour
         if (health <= 0)
         {
             lives -= 1;
-            health = 100;
+            health = 50;
         }
         if (lives == 2 && first == false)
         {
@@ -76,6 +76,7 @@ public class P2Movement : MonoBehaviour
         if (lives == 1 && second == false)
         {
             second = true;
+            health = 100;
             health2.SetActive(false);
             if (choice == 0)
             {
