@@ -8,7 +8,7 @@ public class P1Movement : MonoBehaviour
 {
     
     public int lives = 3;
-    public float heal = 50;
+    public float heal;
     public int choice;
     public bool first = false;
     public bool second = false;
@@ -18,6 +18,7 @@ public class P1Movement : MonoBehaviour
 
     void Start()
     {
+        heal = 50;
         //Load a Texture (Assets/Resources/Textures/tomos.png)
         var CSS1 = Resources.Load<Texture2D>("Textures/thomas");
         var GDS1 = Resources.Load<Texture2D>("Textures/louis");

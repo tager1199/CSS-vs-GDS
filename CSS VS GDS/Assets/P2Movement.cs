@@ -8,7 +8,7 @@ public class P2Movement : MonoBehaviour
 
 
     public int lives = 3;
-    public float health = 50;
+    public float health;
     public int choice;
     public bool first = false;
     public bool second = false;
@@ -17,6 +17,7 @@ public class P2Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        health = 50;
         var CSS1 = Resources.Load<Texture2D>("Textures/thomas");
         var GDS1 = Resources.Load<Texture2D>("Textures/louis");
         var Other1 = Resources.Load<Texture2D>("Textures/tomos");

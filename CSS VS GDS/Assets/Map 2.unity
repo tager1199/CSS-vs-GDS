@@ -2698,7 +2698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  health: 100
+  health: 50
   choice: 0
   first: 0
   second: 0
@@ -3228,7 +3228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lives: 3
-  heal: 100
+  heal: 50
   choice: 0
   first: 0
   second: 0

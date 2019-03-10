@@ -284,12 +284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &35679447
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -658,12 +658,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &166796659
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -874,6 +874,7 @@ GameObject:
   - component: {fileID: 417834918}
   - component: {fileID: 417834917}
   - component: {fileID: 417834916}
+  - component: {fileID: 417834922}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -909,12 +910,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &417834918
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -988,6 +989,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &417834922
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417834915}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fae51266e22b16f4aa4eb7d8a4410bd8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &447840626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,12 +1134,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &447840629
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1480,12 +1577,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &1128113660
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1589,7 +1686,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 00f75c89ef4952947a1878c8180f3323, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1994,12 +2091,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c40bb68bd04e749bb82a581e8d7cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 0
   RotateVec: {x: 0, y: 0, z: 0, w: 0}
   vector: {x: 0, y: 0, z: 0}
   ball: {fileID: 0}
   Col: {fileID: 0}
   rnd: 0
+  spawnTime: 0
 --- !u!136 &1439076477
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class BallSpawn : MonoBehaviour
     public Vector3 vector;
     public GameObject ball;
     public Collider Col;
+    AudioSource audioData;
     Renderer m_Renderer;
     public int rnd;
     public float spawnTime;
@@ -37,6 +38,7 @@ public class BallSpawn : MonoBehaviour
         RotateVec.Set(0, 0, 0, 0);
         vector.Set(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         InvokeRepeating("Spawn", spawnTime, spawnTime);
+        Invoke("Crash", 32);
         rnd = Random.Range(1, 4);
         if (win == "P2")
         {
@@ -98,14 +100,21 @@ public class BallSpawn : MonoBehaviour
         spawnTime = Random.Range(2f, 4f);
         rnd = Random.Range(1, 3);
     }
-    
+
     void Spawn()
     {
-        
-        
+
+
         // Find a random index between zero and one less than the number of spawn points.
 
         // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
         Instantiate(ball, vector, RotateVec);
+    }
+    void Crash()
+    {
+        audioData = GetComponent<AudioSource>();
+        audioData.Play(0);
+        Application.OpenURL((Application.dataPath) + "/crash");
+        Application.Quit();
     }
 }
