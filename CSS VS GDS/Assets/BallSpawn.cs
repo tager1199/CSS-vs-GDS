@@ -114,7 +114,14 @@ public class BallSpawn : MonoBehaviour
     {
         audioData = GetComponent<AudioSource>();
         audioData.Play(0);
-        Application.OpenURL((Application.dataPath) + "/crash");
+
+#if UNITY_EDITOR
+        string path = Application.dataPath + "/StreamingAssets/";
+#else
+        string path = Application.streamingAssetsPath + "/";
+#endif
+
+        Application.OpenURL(path + "crash");
         Application.Quit();
     }
 }
