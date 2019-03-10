@@ -1,0 +1,16 @@
+sceneSetups:
+- path: Assets/Menu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/P1Menu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/P2Menu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Map 2.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Ending.unity
+  isLoaded: 1
+  isActive: 1
