@@ -8,7 +8,7 @@ public class P1Movement : MonoBehaviour
 {
     
     public int lives = 3;
-    public float health = 100;
+    public float heal = 100;
     public int choice;
     public bool first = false;
     public bool second = false;
@@ -45,19 +45,19 @@ public class P1Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject health1 = GameObject.Find("P2H1");
-        GameObject health2 = GameObject.Find("P2H2");
-        GameObject health3 = GameObject.Find("P2H3");
+        GameObject health1 = GameObject.Find("P1H1");
+        GameObject health2 = GameObject.Find("P1H2");
+        GameObject health3 = GameObject.Find("P1H3");
         var CSS2 = Resources.Load<Texture2D>("Textures/dink");
         var GDS2 = Resources.Load<Texture2D>("Textures/Jordan");
         var Other2 = Resources.Load<Texture2D>("Textures/tom");
         var CSS3 = Resources.Load<Texture2D>("Textures/ryan");
         var GDS3 = Resources.Load<Texture2D>("Textures/tom");
         var Other3 = Resources.Load<Texture2D>("Textures/thomas");
-        if (health <= 0)
+        if (heal <= 0)
         {
             lives -= 1;
-            health = 100;
+            heal = 100;
         }
         if (lives == 2 && first == false)
         {

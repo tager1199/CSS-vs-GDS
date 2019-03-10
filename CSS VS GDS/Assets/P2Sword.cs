@@ -29,7 +29,7 @@ public class  P2Sword : MonoBehaviour
 
         if (other.gameObject.name == "Player 1")
         {
-            referenceScript.health -= 10;
+            referenceScript.heal -= 10;
         }
     }
 }
