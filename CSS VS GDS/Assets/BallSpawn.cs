@@ -5,14 +5,14 @@ using UnityEngine;
 public class BallSpawn : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    public float spawnTime;            // How long between each spawn.
+    // Start is called before the first frame update        // How long between each spawn.
     public Quaternion RotateVec;        // An array of the spawn points this enemy can spawn from.
     public Vector3 vector;
     public GameObject ball;
     public Collider Col;
     Renderer m_Renderer;
     public int rnd;
+    public float spawnTime;
 
     void Start()
     {
@@ -95,7 +95,7 @@ public class BallSpawn : MonoBehaviour
 
     private void Update()
     {
-         spawnTime = Random.Range(1f, 3f);
+        spawnTime = Random.Range(2f, 4f);
         rnd = Random.Range(1, 3);
     }
     

@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BallSpawn.cs" />
+    <Compile Include="Assets\EndMusic.cs" />
     <Compile Include="Assets\MainMenuButtons.cs" />
     <Compile Include="Assets\Music.cs" />
     <Compile Include="Assets\P1Choice.cs" />
